@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="вёрстка, HTML, CSS" />
+    <meta
+      name="description"
+      content="Простая страница без библиотек, где происходят всякие события"
+    />
+    <title>SE: простая страница с событиями</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="time.css" />
+    <link rel="stylesheet" href="actions.css" />
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="emotions.css" />
+  </head>
+  <body>
+    <header>
+      <p>Заметки по созданию страницы</p>
+      <nav><a href="../index.html">На главную</a></nav>
+    </header>
+    <main id="draft-main">
+      <article>
+        <h1>Набросок</h1>
+        <p>Итак, представим, что пространство - это некий квадрат.</p>
+        <p>А объект - это кружок внутри.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+          <defs>
+            <linearGradient id="AreaGradient" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="5%" id="gradientTop" />
+              <stop offset="95%" id="gradientBottom" />
+            </linearGradient>
+          </defs>
+          <rect id="area" width="99" height="99" rx="10" ry="5"></rect>
+          <ellipse id="object" cx="50" ry="10" rx="12" cy="89"></ellipse>
+          <g id="weather"></g>
+        </svg>
+      </article>
+      <article>
+        <h2>Планы</h2>
+        <ul>
+          <li>Эмоции объекта при действиях, реакция на погоду</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Итоги</h2>
+        <ul>
+          <li>Создано пространство и объект</li>
+          <li>
+            Добавлена окраска пространства в зависимости от времени года и дня
+          </li>
+          <li>Дополнительно добавлен счётчик посещений</li>
+          <li>
+            [<time datetime="2022-10-23">23.10</time>] Добавлена погода: снег и
+            дождь
+          </li>
+          <li>
+            [<time datetime="2022-10-24">24.10</time>] Добавлен новый тип
+            действий, срабатывающий при наведении: уклонение
+          </li>
+          <li>
+            [<time datetime="2022-10-26">26.10</time>] Мёрзнуть от снега и
+            дождя, но согреваться прыжками
+          </li>
+        </ul>
+      </article>
+      <aside>
+        <h2>Посещения:</h2>
+        <p id="visitRow"></p>
+        <ul id="visits"></ul>
+      </aside>
+    </main>
+    <footer>подвал сайта</footer>
+    <script type="text/javascript" src="./time.js"></script>
+    <script type="text/javascript" src="./actions.js"></script>
+    <script type="text/javascript" src="./visits.js"></script>
+    <script type="text/javascript" src="./weather.js"></script>
+    <script type="text/javascript" src="./emotions.js"></script>
+  </body>
+</html>

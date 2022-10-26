@@ -1,0 +1,25 @@
+#AreaGradient .winter {
+  stop-color: white;
+}
+#AreaGradient .spring {
+  stop-color: lightgreen;
+}
+#AreaGradient .summer {
+  stop-color: lightyellow;
+}
+#AreaGradient .autumn {
+  stop-color: orange;
+}
+
+#AreaGradient .morning {
+  stop-color: lightblue;
+}
+#AreaGradient .day {
+  stop-color: lightskyblue;
+}
+#AreaGradient .evening {
+  stop-color: blue;
+}
+#AreaGradient .night {
+  stop-color: darkblue;
+}

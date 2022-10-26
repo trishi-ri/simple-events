@@ -1,0 +1,37 @@
+@keyframes objectJump {
+  0% {
+    fill: #ffffff;
+    cy: 90px;
+  }
+  75% {
+    fill: #1bceb1;
+    cy: 20px;
+  }
+  100% {
+    fill: #1bce4f;
+    cy: 90px;
+  }
+}
+@keyframes objectShake {
+  0% {
+    transform: translate(0px);
+  }
+  10% {
+    transform: translate(2px);
+  }
+  20% {
+    transform: translate(-2px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+#object.jump {
+  animation: 0.5s ease 1 objectJump;
+  cursor: initial;
+}
+
+#object.shake {
+  animation: 0.1s ease infinite objectShake;
+}

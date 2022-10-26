@@ -1,0 +1,91 @@
+@keyframes raindrop0 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes raindrop1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes raindrop2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rain {
+  fill: lightblue !important;
+}
+.raindrop-0,
+.raindrop-1,
+.raindrop-2 {
+  visibility: hidden;
+  width: 1px;
+  height: 7px;
+  animation: 0.5s linear infinite;
+}
+.rain .raindrop-0,
+.rain .raindrop-1,
+.rain .raindrop-2 {
+  visibility: visible;
+}
+.raindrop-0 {
+  animation-name: raindrop0;
+}
+.raindrop-1 {
+  animation-name: raindrop1;
+}
+.raindrop-2 {
+  animation-name: raindrop2;
+}
+
+.snow {
+  fill: white !important;
+}
+.snowflake-0,
+.snowflake-1,
+.snowflake-2 {
+  visibility: hidden;
+  width: 2px;
+  height: 2px;
+  animation: 3s linear infinite;
+}
+.snow .snowflake-0,
+.snow .snowflake-1,
+.snow .snowflake-2 {
+  visibility: visible;
+}
+.snowflake-0 {
+  animation-name: raindrop0;
+}
+.snowflake-1 {
+  animation-name: raindrop1;
+}
+.snowflake-2 {
+  animation-name: raindrop2;
+}
