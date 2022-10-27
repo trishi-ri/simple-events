@@ -45,7 +45,7 @@ a {
 }
 #object {
   stroke-width: 1px;
-  fill: white;
+  fill: url(#ObjectGradient);
   stroke: black;
   cursor: pointer;
   transition: 0.5s;

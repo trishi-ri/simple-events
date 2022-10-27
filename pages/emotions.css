@@ -1,6 +1,111 @@
-#object.sad {
-  fill: gray;
+@keyframes gradientStop1 {
+  0% {
+    stop-color: white;
+  }
+  25% {
+    stop-color: inherit;
+  }
+  50% {
+    stop-color: inherit;
+  }
+  75% {
+    stop-color: inherit;
+  }
+  100% {
+    stop-color: inherit;
+  }
+}
+@keyframes gradientStop2 {
+  0% {
+    stop-color: inherit;
+  }
+  25% {
+    stop-color: white;
+  }
+  50% {
+    stop-color: inherit;
+  }
+  75% {
+    stop-color: inherit;
+  }
+  100% {
+    stop-color: inherit;
+  }
+}
+@keyframes gradientStop3 {
+  0% {
+    stop-color: inherit;
+  }
+  25% {
+    stop-color: inherit;
+  }
+  50% {
+    stop-color: white;
+  }
+  75% {
+    stop-color: inherit;
+  }
+  100% {
+    stop-color: inherit;
+  }
+}
+@keyframes gradientStop4 {
+  0% {
+    stop-color: inherit;
+  }
+  25% {
+    stop-color: inherit;
+  }
+  50% {
+    stop-color: inherit;
+  }
+  75% {
+    stop-color: white;
+  }
+  100% {
+    stop-color: inherit;
+  }
+}
+@keyframes gradientStop5 {
+  0% {
+    stop-color: inherit;
+  }
+  25% {
+    stop-color: inherit;
+  }
+  50% {
+    stop-color: inherit;
+  }
+  75% {
+    stop-color: inherit;
+  }
+  100% {
+    stop-color: white;
+  }
 }
 
-/* TODO: анимация волнами по поверхности для эмоций,
-менять цвет и скорость в зависимости от эмоции */
+[id^="object-gradient-"] {
+  animation: 2s ease infinite;
+}
+#object-gradient-1 {
+  animation-name: gradientStop1;
+}
+#object-gradient-2 {
+  animation-name: gradientStop2;
+}
+#object-gradient-3 {
+  animation-name: gradientStop3;
+}
+#object-gradient-4 {
+  animation-name: gradientStop4;
+}
+#object-gradient-5 {
+  animation-name: gradientStop5;
+}
+
+#ObjectGradient {
+  stop-color: white;
+}
+#ObjectGradient.sad {
+  stop-color: gray;
+}
